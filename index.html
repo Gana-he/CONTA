@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loader" class="loader-wrapper">
+        <div class="spinner"></div>
+    </div>
+
+    <div id="panel-admin" class="admin-panel hidden">
+        <h2>Panel de Control QR </h2>
+        <div id="contenedor-qrs" class="qr-admin-grid"></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button onclick="cerrarAdmin()" class="btn-close-admin">Cerrar Panel</button>
+    </div>
+
+    <section id="vista-catalogo">
+        <header class="header">
+            <div class="logo">CATALOGO <span>PRODUCTOS</span></div>
+            <button onclick="abrirAdmin()" class="btn-lock">🔒</button>
+        </header>
+        <main class="product-grid" id="grid-productos"></main>
+    </section>
+
+    <section id="vista-detalle" class="hidden">
+        <div id="detalle-contenido" class="detalle-container">
+            </div>
+        <button onclick="irAlCatalogo()" class="btn-home">🏠</button>
+    </section>
+
+    <script src="java.js"></script>
+</body>
+</html>
